@@ -35,14 +35,14 @@
     <legend>Vos infos de connexion</legend>
     <div>
     <label for="login">Login</label>
-    <input type="text" name="login" placeholder="entrez votre identifiant">
+    <input type="text" name="login" placeholder="entrez votre identifiant" required>
     </div>
     <div>
     <label for="mdp">Mot de passe</label>
-    <input type="password" name="mdp" placeholder="entrez votre mot de passe">
+    <input type="password" name="mdp" placeholder="entrez votre mot de passe" required>
 </div>
     <label for="mdp">Confirmation mot de passe </label>
-    <input type="password" name="mdp" placeholder="entrez encore votre mot de passe">
+    <input type="password" name="mdp" placeholder="entrez encore votre mot de passe" required>
   </fieldset>
 
 
@@ -50,26 +50,26 @@
   <legend>Vos infos personnelles</legend>
 
   <label for="prénom">Prénom</label>
-  <input type="text" name="prenom" placeholder="entrez votre prénom">
+  <input type="text" name="prenom" placeholder="entrez votre prénom" required>
 
 <div>
   <label for="nom">Nom</label>
-  <input type="text" name="nom" placeholder="entrez votre nom">
+  <input type="text" name="nom" placeholder="entrez votre nom" required>
 </div>
 
 <div>
   <label for="mail">Adresse Mail</label>
-  <input type="text" name="mail" placeholder="entrez votre e-mail">
+  <input type="text" name="mail" placeholder="entrez votre e-mail" required>
 </div>
 
 <div>
   <label for="datenaissance">Date de naissance</label>
-  <input type="date" name="datenaissance" >
+  <input type="date" name="datenaissance" required>
 </div>
 
 <div>
   <label for="telephone">Numéro de Téléphone</label>
-  <input type="text" name="telephone" placeholder="+33">
+  <input type="text" name="telephone" placeholder="+33" required>
 </div>
 </fieldset>
 
@@ -79,7 +79,7 @@
 
 <div>
   <label for="presentation">Présentation</label>
-  <textarea name="textarea" placeholder="présentez-vous ici en quelques lignes"></textarea>
+  <textarea name="textarea" placeholder="présentez-vous ici en quelques lignes" required></textarea>
   </div>
 <div>
   <label for="hobbies">Hobbies</label> <br>
@@ -95,21 +95,33 @@
   <input type="checkbox" name="checkbox6" value="checkbox"> <br>
 </div>
 
-  <div>
-  <label for="genre">Genre</label>
-    <label>Femme
-    <input type="radio" name="femme" value="radio1">
-    </label>
-    <label>Homme
-    <input type="radio" name="homme" value="radio2">
-    </label>
-    <label>Autre
-    <input type="radio" name="autre" value="radio3">
-    </label>
-  </div> <br>
+
+
+<p>genre</p>
+<div>
+  <input type="radio" id="femme" name="genre" value="femme"
+         checked>
+  <label for="femme">Femme</label>
+</div>
+
+<div>
+  <input type="radio" id="homme" name="genre" value="homme">
+  <label for="homme">Homme</label>
+</div>
+
+<div>
+  <input type="radio" id="autre" name="genre" value="autre">
+  <label for="autre">Autre</label>
+</div>
+
+
+
+  <br>
+
+
   <div>
   <label for="etude">Niveau d'étude </label>
-  <select name="Niveau d'étude" id="niveau étude">
+  <select name="Niveau d'étude" id="niveau étude" required>
   <option>Brevet des collèges</option>
   <option>Bac</option>
   <option>Deug</option>
